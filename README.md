@@ -1,1 +1,1 @@
-# RAG_prod_setup
+# This is the production-ready RAG (Retrieval Augmented Generation) system
