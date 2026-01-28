@@ -78,17 +78,17 @@ def search_similar(
         limit: int = 5
 ) -> List[dict]:
     """Search for similar documents"""
-    results = client.search(
+    results = client.query_points(
         collection_name=collection_name,
-        query_vector=query_embedding,
+        query=query_embedding,
         limit=limit,
         with_payload=True
     )
     return [
         {
-            "text": result.payload["text"],
-            "metadata": result.payload["metadata"],
-            "score": result.score
+            "text": point.payload["text"],
+            "metadata": point.payload["metadata"],
+            "score": point.score
         }
-        for result in results
+        for point in results.points
     ]
