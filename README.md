@@ -1,1 +1,1 @@
-# This is the production-ready RAG (Retrieval Augmented Generation) system
+# RAG (Retrieval Augmented Generation) system 
