@@ -19,6 +19,3 @@ Production-ready RAG (Retrieval-Augmented Generation) система для во
 docker-compose up -d
 python app/main.py
 \`\`\`
-
-## Результаты
-[Добавь метрики: recall@k, ответы на примеры вопросов]
